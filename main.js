@@ -26,8 +26,8 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
 
-  mesh.rotation.x = Date.now() * 0.00005;
-  mesh.rotation.y = Date.now() * 0.00005;
+  mesh.rotation.x = Date.now() * 0.00009;
+  mesh.rotation.y = Date.now() * 0.00009;
 
   renderer.render(scene, camera);
 }
