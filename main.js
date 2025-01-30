@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 var camera, scene, renderer;
 var geometry, material, mesh;
 
