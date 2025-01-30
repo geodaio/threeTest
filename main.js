@@ -24,7 +24,7 @@ function init() {
 }
 
 function animate() {
-  reqestAnimationFrame(animate);
+  requestAnimationFrame(animate);
 
   mesh.rotation.x = Date.now() * 0.00005;
   mesh.rotation.y = Date.now() * 0.00005;
