@@ -3,9 +3,6 @@ import * as THREE from 'three';
 var camera, scene, renderer;
 var geometry, material, mesh;
 
-init()
-requestAnimationFrame(animate);
-
 function init() {
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
   camera.position.x = 2
@@ -31,5 +28,8 @@ function animate(time) {
 
   renderer.render(scene, camera);
   
-  requestAnimationFrame(animate);
+  requestAnimationFrame( animate );
 }
+
+init()
+requestAnimationFrame( animate );
