@@ -12,7 +12,7 @@ function init() {
     
   scene = new THREE.Scene();
     
-  geometry = new THREE.IcosahedronGeometry(200, 1);
+  geometry = new THREE.SphereGeometry(1);
   material = new THREE.MeshBasicMaterial({ color: 0x1b0d72, wireframe: true, wireframeLinewidth: 2});
   mesh = new THREE.Mesh(geometry, material);
   
