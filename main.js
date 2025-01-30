@@ -10,7 +10,7 @@ function init() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0x1b0d72 );
     
-  geometry = new THREE.SphereGeometry(1);
+  geometry = new THREE.IcosahedronGeometry(200, 1);
   material = new THREE.MeshBasicMaterial({ color: 0xfcce30, wireframe: true, wireframeLinewidth: 2});
   mesh = new THREE.Mesh(geometry, material);
   
@@ -21,15 +21,14 @@ function init() {
   document.body.appendChild(renderer.domElement);
 }
 
-function animate(time) {
+function animate() {
+  requestAnimationFrame( animate );
 
-  mesh.rotation.x = time * 0.00009;
-  mesh.rotation.y = time * 0.00009;
+  mesh.rotation.x = Date.now() * 0.00009;
+  mesh.rotation.y = Date.now() * 0.00009;
 
   renderer.render(scene, camera);
-  
-  requestAnimationFrame( animate );
 }
 
 init()
-requestAnimationFrame( animate );
+animate();
