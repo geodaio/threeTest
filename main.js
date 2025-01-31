@@ -11,7 +11,7 @@ function init() {
   scene.background = new THREE.Color( 0x1b0d72 );
     
   geometry = new THREE.TorusKnotGeometry(3, 10, 300, 9, 11, 5);
-  material = new THREE.MeshBasicMaterial({ color: 0xfcce30, wireframe: true, wireframeLinewidth: 2});
+  material = new THREE.MeshBasicMaterial({ color: 0x2f1087, wireframe: true, wireframeLinewidth: 4});
   mesh = new THREE.Mesh(geometry, material);
   
   scene.add(mesh);
