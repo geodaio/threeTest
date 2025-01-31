@@ -10,7 +10,7 @@ function init() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0x1b0d72 );
     
-  geometry = new THREE.IcosahedronGeometry(200, 1);
+  geometry = new THREE.TorusKnotGeometry(20, 1.8, 55, 9, 8, 5, heightScale = 1);
   material = new THREE.MeshBasicMaterial({ color: 0xfcce30, wireframe: true, wireframeLinewidth: 2});
   mesh = new THREE.Mesh(geometry, material);
   
